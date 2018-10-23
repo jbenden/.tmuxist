@@ -265,12 +265,14 @@ set -g pane-border-status top
 # if local session attach status line to bottom
 set-option -g status-position bottom
 
+set -g history-limit 100000
+
 # keybindings
 
 # leader key
-unbind-key C-a
-set -g prefix 'C-\'
-bind-key 'C-\' send-prefix
+#unbind-key C-a
+#set -g prefix 'C-\'
+#bind-key 'C-\' send-prefix
 
 # vi mode
 setw -g mode-keys vi
