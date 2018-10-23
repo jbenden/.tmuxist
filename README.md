@@ -10,8 +10,6 @@ Shoutout to [@gpakosz](https://twitter.com/gpakosz).
 ## Features
 
 - Red turning indicator if panes are synced
-- Metakey navigation
- - I use iTerm2 and bound ESC to Capslock and use +ESC as metakey
 - Nested remote session aware
 - Per pane title
 - Vi mode
@@ -30,22 +28,22 @@ You can simply use the install script to create some symlinks.
 
 ```bash
 $ cd ~
-$ git clone --recursive https://github.com/chrootzius/.tmuxist.git
+$ git clone --recursive https://github.com/jbenden/.tmuxist.git
 $ ./.tmuxist/install.sh
 ```
 
-Or you can use fancy gnu stow (which does pretty much the same)
+Or you can use fancy GNU stow (which does pretty much the same)
 
 ```bash
 $ cd ~
-$ git clone --recursive https://github.com/chrootzius/.tmuxist.git
+$ git clone --recursive https://github.com/jbenden/.tmuxist.git
 $ cd .tmuxist/
 $ stow tmux
 ```
 
 ## Remote session awareness
 
-That means that you can use the same config on your remote system and on your 
+That means that you can use the same config on your remote system and on your
 local system.
 
 - Same keybindings
@@ -53,12 +51,12 @@ local system.
 - `F12` as toogle key for the local keymap so every keystroke is send to the
   remote session
 
-On the left side of status-right left from the sync indicator is an indicator 
+On the left side of status-right left from the sync indicator is an indicator
 that tells you wether the keymap is turnded on or off.
 
 ## Keybindings
 
- - `C-\` as prefix key
+ - `C-b` as prefix key
  - `v` begin selection in visual mide
  - `y` copy selection in visual mode
  - `<prefix> s` toggle pane sync
