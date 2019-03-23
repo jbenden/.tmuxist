@@ -293,6 +293,9 @@ bind -n M-l select-pane -R
 bind -n M-c new-window
 bind -n M-w choose-tree -w
 
+unbind-key 'c'
+bind c new-window
+
 # pane management
 bind -n M-x kill-pane
 unbind-key '"'
@@ -303,8 +306,6 @@ bind -n M-- split-window -v
 # sesseion management
 bind -n M-r command-prompt 'rename-session "%%"'
 bind -n M-X kill-session
-unbind c
-bind c new-session
 bind X kill-session
 bind -n M-s choose-tree -s
 set -s escape-time 500
